@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-grid {
+    width: 100%;
+    max-width: 1126px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.container button {
+    background-color: #0275d8;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 16px;
+    right: 24px;
+    transition: all 0.1s linear 0.1s;
+}
+
+.container button:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+    transform: scale(1.1);
+}
